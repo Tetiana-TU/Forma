@@ -1,0 +1,53 @@
+.profile {
+  border: 4px solid black;
+  border-radius: 12px;
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 40px;
+  background-color: rgb(197, 195, 195);
+  margin-bottom: 50px;
+}
+.avatar img {
+  border-radius: 50%;
+  background-color: rgb(53, 52, 52);
+  width: 300px;
+}
+.titleName {
+  font-weight: bold;
+  font-size: 52px;
+  margin: 0;
+}
+.titleTagLoc {
+  font-size: 40px;
+  margin: 0;
+}
+.followers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(128, 126, 126);
+  margin-bottom: 0;
+  padding: 0 20px;
+  border-top: 4px solid black;
+}
+
+.followers li {
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.followers span {
+  display: block;
+  font-size: 32px;
+}
+
+.followers li:first-child {
+  border-right: 4px solid black;
+}
+.followers li:last-child {
+  border-left: 4px solid black;
+}
+
+.followers span:last-child {
+  font-weight: bold;
+}
