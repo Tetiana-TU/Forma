@@ -1,13 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYq1DwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="./index.css" />
+    <title>Feedback System</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="feedback-container">
+      <h1>Give us your valuable feedback</h1>
+      <p>Your feedback is very important to us</p>
+      <div class="emoji-box">
+        <button class="btn normal" type="button">&#128578;</button>
+        <button class="btn normal" type="button">&#128515;</button>
+        <button class="btn normal" type="button">&#128519;</button>
+        <button class="btn normal" type="button">&#128531;</button>
+        <button class="btn normal" type="button">&#128532;</button>
+        <button class="btn normal" type="button">&#128545;</button>
+      </div>
+      <p class="question">What do you want to say?</p>
+      <textarea id="textarea" cols="20" rows="5"></textarea>
+      <p class="question">Would you like to share this publicly?</p>
+      <div class="radio-btns">
+        <div class="one-btn">
+          <input type="radio" name="one" id="Yes" />
+          <label for="Yes">Yes</label>
+        </div>
+        <div class="one-btn">
+          <input type="radio" name="one" id="No" />
+          <label for="No">No</label>
+        </div>
+      </div>
+      <div class="info-field">
+        <div class="name">
+          <label for="nickname">
+            <input type="text" id="nickname" placeholder="" />
+            <span>Nickname</span>
+          </label>
+        </div>
+        <div class="email">
+          <label for="email">
+            <input type="email" id="email" placeholder="" />
+            <span>Email address (Will not be published)</span>
+          </label>
+        </div>
+      </div>
+      <div class="accept">
+        <input type="radio" id="accept" />
+        <label for="accept"
+          >I accept the <a href="#">terms and conditions</a></label
+        >
+      </div>
+      <div class="center">
+        <button class="btn button" type="button" id="sendBtn">Send</button>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
