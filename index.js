@@ -53,20 +53,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // .then(data => console.log(data));
     //     Очищаємо форму після відправки
     //     Скидаємо значення полів форми
-    //     document.getElementById('textarea').value = '';
-    //     document.getElementById('nickname').value = '';
-    //     document.getElementById('email').value = '';
+    document.getElementById('textarea').value = '';
+    document.getElementById('nickname').value = '';
+    document.getElementById('email').value = '';
 
-    //     // Скидаємо вибір радіокнопок
-    //     const radioButtons = document.querySelectorAll('input[name="one"]');
-    //     radioButtons.forEach(radio => {
-    //       radio.checked = false;
-    //     });
+    // Скидаємо вибір радіокнопок
+    const radioButtons = document.querySelectorAll('input[name="one"]');
+    radioButtons.forEach(radio => {
+      radio.checked = false;
+    });
 
-    //     // Скидаємо галочку на прийняття умов
-    //     document.getElementById('accept').checked = false;
+    // Скидаємо галочку на прийняття умов
+    document.getElementById('accept').checked = false;
 
     //     // Якщо у вас є форма, можна скинути її через метод reset():
-    //     // document.querySelector('form').reset();
+    // document.querySelector('form').reset();
   });
 });
